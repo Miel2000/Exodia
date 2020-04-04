@@ -1,0 +1,20 @@
+easy_admin: 
+  entities:
+    Personnage:
+      class: App\Entity\Personnage
+  
+      list:
+        actions:
+          - { name: "edit", icon: "pencil", label: "Modifier" }
+          - { name: "delete", icon: "trash", label: "Supprimer" }
+      form:
+        fields:
+          - { type: "tab", label: " Personnage", icon: "user" }
+          - { property: "nom" }
+          - { property: "race" }
+          - { property: "classe" }
+          - { property: "pnj" }
+
+          - { type: "tab", label: "Equipement", icon: "newspaper-o" }
+          - { property: "arme", label: "Main gauche" }
+          - { property: "armure", label: "Main droite" }

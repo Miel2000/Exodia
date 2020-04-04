@@ -1,0 +1,17 @@
+easy_admin:
+  entities:
+    Armure:
+        class: App\Entity\Armure
+        list:
+          actions:
+            - { name: "edit", icon: "pencil", label: "Modifier" }
+            - { name: "delete", icon: "trash", label: "Supprimer" }
+        form:
+          fields:
+            - { type: "tab", label: "Armure", icon: "user" }
+            - { property: "libelle" }
+            - { property: "description" }
+            - { property: "bonus_physique", type: integer }
+            - { property: "bonus_savoir", type: integer }
+            - { property: "bonus_dexterite", type: integer }
+            - { property: "bonus_sens", type: integer }

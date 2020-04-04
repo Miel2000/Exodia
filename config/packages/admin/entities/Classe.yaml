@@ -1,0 +1,17 @@
+easy_admin:
+    entities:
+        Classe:
+            class: App\Entity\Classe
+            list:
+              actions:
+                - { name: "edit", icon: "pencil", label: "Modifier" }
+                - { name: "delete", icon: "trash", label: "Supprimer" }
+            form:
+              fields:
+                - { type: "tab", label: "Classe", icon: "user" }
+                - { property: "libelle" }
+                - { property: "decription" }
+                - { property: "savoir" }
+                - { property: "physique" }
+                - { property: "dexterite" }
+                - { property: "sens" }

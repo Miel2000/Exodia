@@ -1,0 +1,24 @@
+{% extends '@EasyAdmin/default/edit.html.twig' %}
+
+{% block main %}
+
+   <!-- fichier obsoléte, si on veut custom son edit view, il faut préciser dans l'entité yaml (Personnage.yaml) l'option templates, puis donner la route jusqu'ici yo -->
+
+ {% block entity_form %}
+    {{ form_start(form) }}
+
+        <div class="row">
+
+            <div class="col-sm-4">
+                {{ form_row(form.nom) }}
+            </div>
+
+            <div class="col-sm-4">
+                {{ form_row(form.arme) }}
+            </div>
+
+        </div>
+
+    {{ form_end(form) }}
+    {% endblock  %}
+{% endblock  %}

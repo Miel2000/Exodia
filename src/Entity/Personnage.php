@@ -84,6 +84,11 @@ class Personnage
      */
     private $race;
 
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $pnj;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -169,6 +174,18 @@ class Personnage
     public function setRace(?Race $race): self
     {
         $this->race = $race;
+
+        return $this;
+    }
+
+    public function getPnj(): ?bool
+    {
+        return $this->pnj;
+    }
+
+    public function setPnj(bool $pnj): self
+    {
+        $this->pnj = $pnj;
 
         return $this;
     }

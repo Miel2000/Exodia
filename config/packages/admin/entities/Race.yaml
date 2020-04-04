@@ -1,0 +1,18 @@
+easy_admin:
+  entities:
+    Race:
+        class: App\Entity\Race
+        list:
+          actions:
+            - { name: "edit", icon: "pencil", label: "Modifier" }
+            - { name: "delete", icon: "trash", label: "Supprimer" }
+        form:
+          fields:
+            - { type: "tab", label: "Race", icon: "user" }
+            - { property: "libelle" }
+            - { property: "description" }
+            - { property: "sante" }
+            - { property: "force" }
+            - { property: "magie" }
+            - { property: "defense" }
+    

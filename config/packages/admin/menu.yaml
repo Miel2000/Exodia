@@ -1,0 +1,14 @@
+easy_admin:
+  site_name: "<img style='width:100px;opacity:0.7;' src='https://icon-library.net/images/vampire-icon/vampire-icon-12.jpg' />"
+  design:
+    menu:
+      - label: "Exodia"
+        children:
+          - { label: "IN GAME" }
+          - { entity: "Personnage" }
+          - { label: "STATIC" }
+          - { entity: "Classe" }
+          - { entity: "Race" }
+          - { entity: "Arme" }
+          - { entity: "Armure" }
+
