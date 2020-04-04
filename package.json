@@ -1,0 +1,28 @@
+{
+  "name": "website-skeleton",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "dev"
+  },
+  "dependencies": {
+    "debug": "^4.1.1",
+    "npm-watch": "^0.6.0",
+    "vue": "^2.6.11",
+    "vue-loader": "^14.2.4",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "devDependencies": {
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "scripts": {
+    "build": "webpack --config webpack/webpack.config.prod.js --colors",
+    "start": "webpack-dev-server --open --config webpack/webpack.config.js",
+    "dev": "webpack-dev-server --open --config webpack/webpack.config.dev.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
